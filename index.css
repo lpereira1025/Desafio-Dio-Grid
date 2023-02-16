@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 120px);
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+img{
+    align-self: center;
+}
+
+main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(4, 300px);
+    gap: 10px;
+}
+
+aside{
+    grid-area: aside;
+}
